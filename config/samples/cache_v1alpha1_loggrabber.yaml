@@ -1,0 +1,6 @@
+apiVersion: cache.loggrabber.io/v1alpha1
+kind: Loggrabber
+metadata:
+  name: loggrabber-sample
+spec:
+  # TODO(user): Add fields here

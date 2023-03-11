@@ -1,0 +1,24 @@
+# permissions for end users to edit loggrabbers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: loggrabber-editor-role
+rules:
+- apiGroups:
+  - cache.loggrabber.io
+  resources:
+  - loggrabbers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - cache.loggrabber.io
+  resources:
+  - loggrabbers/status
+  verbs:
+  - get
